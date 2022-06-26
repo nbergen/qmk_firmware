@@ -26,7 +26,8 @@
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x3060
 #define DEVICE_VER      0x0001
-//#define MANUFACTURER    tshort
+#define MANUFACTURER    diademed
+#define PRODUCT         dwarp
                                                             
 /* key matrix size */                                       
 // Rows are doubled-up                                      
@@ -40,7 +41,11 @@
 /* COL2ROW or ROW2COL */                                    
 #define DIODE_DIRECTION COL2ROW                             
                                                             
-#define MASTER_RIGHT
+#define EE_HANDS
 
 /* serial.c configuration for split keyboard */
+#define USE_SERIAL
 #define SOFT_SERIAL_PIN D0
+#define SPLIT_USB_DETECT
+#define SELECT_SOFT_SERIAL_SPEED 1
+#define SPLIT_USB_TIMEOUT 2500
